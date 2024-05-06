@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="J220 final project">    
+    <title>Which language is the hardest</title>    
+    <!-- Put your fonts and other CSS here --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Timmana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/hour.css"> 
+  </head>
+  <body>
+    <h1><a href="index.html">Which Language Is The Hardest?</a></h1>
+    <h2>How Many Hours It Takes to Learn?</h2>
+    <div class="hoursrange">
+      <div id="output"></div>
+      <div id="hours-to-advanced">Hours to Advance</div>
+
+      <!-- START SLIDER -->
+      <input type="range" name="cowbell" id="slider" min="700" max="2500" value="800" step="10" list="markers"/>
+
+      <datalist id="markers">
+        <option value="700" label="700"></option>
+        <option value="1300" label="1300"></option>
+        <option value="1900" label="1900"></option>
+        <option value="2500" label="2500"></option>
+      </datalist>
+      <!-- END SLIDER -->
+
+    </div>
+    <div id="language-text">English</div>
+    <script defer src="hour.js"></script>
+    <a href="alphabets.html">
+      <button>
+        next ⮕
+      </button>
+      </a>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  font-size:16px;
+  background-color: #ffe8e8;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Timmana", sans-serif;
+}
+
+main{
+  height: 100vh;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 2.5rem; 
+  margin: 0 ;
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem; 
+  color:orangered;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the default text color */
+}
+
+figure {
+  position: relative;
+  height: calc(100vh - 200px); 
+  width: 100%;
+  margin: 0 auto;
+}
+
+.labels {
+  list-style: none;
+  margin: 0 5%;
+  padding: 0;
+  /* overflow: hidden; */
+}
+.tag {
+  list-style: none;
+  display: block;
+  width: 16%;
+  margin-right: 5%;
+  padding: 0;
+  float: left;
+  text-align: center;
+}
+.tag:last-child {
+  margin-right: 0;
+}
+
+.tag-text {
+  display: inline-block;
+  margin: auto;
+  font-family: "Timmana", sans-serif; 
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: black; 
+  text-decoration: underline;
+  text-decoration-style:dashed;
+  text-decoration-color: orangered;
+  /* padding: 0px 10px; */
+  text-align: center; 
+}
+
+.tag-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* 调整波浪线距离文本的距离 */
+  left: 0;
+  width: 100%;
+  height: 2px; /* 波浪线的高度 */
+  background-image: linear-gradient(90deg, transparent, orangered, transparent); /* 波浪线颜色 */
+  background-size: 50% 100%; /* 波浪线的宽度和高度比例 */
+}
+
+.number-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 4s ease forwards
+}
+.number {
+  width: 48px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #626567; /* Change number color to a darker shade */
+  text-shadow: 3px 3px 6px rgba(248, 247, 247, 0.907); /* Add a shadow effect */
+}
+.number-container .number:first-child {
+  transform: translateX(-50%); 
+}
+
+/* 定义淡入动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* 初始透明度为 0 */
+  }
+  to {
+    opacity: 1; /* 最终透明度为 1 */
+  }
+}
+
+@media screen and (min-width: 900px) {
+  h1{
+    font-size: 3.5rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  .tag-text{
+    font-size: 2.5rem;
+  }
+
+  .number{
+    font-size: 2.5rem;
+  }
+
+  figure {
+    height: calc(100vh - 150px); 
+  }
+
+  .labels {
+    margin: -3rem 5%;
+  }
+
+
+
+
+}

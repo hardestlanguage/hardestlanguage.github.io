@@ -1,0 +1,158 @@
+html,
+body {
+height: 20%;
+width: 100%;
+margin: 0;
+padding: 0;
+left: 0;
+top: 0;
+font-size: 16px;
+font-family: "Timmana", sans-serif;
+background-color: lavenderblush
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  font-family: 'Bungee Shade', sans-serif;
+  font-size: 2.5rem; 
+  margin: 0 ;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the default text color */
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem; 
+  color:orangered;
+  margin: 0;
+}
+
+.hoursrange {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 490px;
+}
+
+
+
+
+#output {
+  position: absolute;
+  top: -30px; 
+  left: 0;
+  width: 100%; 
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* START SLIDER */
+
+#slider {
+  margin: 0;
+  width: 80%;
+  -webkit-appearance: none;   
+  background: #d3d3d3;  
+
+}
+
+#slider::-webkit-slider-thumb{
+  -webkit-appearance: none; 
+  background:green;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}  
+
+#slider:hover {
+  opacity: 1; 
+} 
+
+
+/* END SLIDER */
+
+
+
+
+
+
+#language-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+#hours-to-advanced {
+  position: absolute;
+  top: -30px;
+  left: 150px;
+  font-size: 18px;
+}
+
+button {
+  position: fixed;
+  bottom:8px;
+  right: 20px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  border: none;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: orangered;
+  background-color: transparent;
+  font-family: "Timmana", sans-serif;
+}
+
+button text{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+button:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: green;
+}
+
+
+@media screen and (min-width: 1200px) {
+  h1{
+    font-size: 3.5rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  button {
+    position: fixed;
+    bottom: 35px;
+  }
+
+  #markers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 80%;
+    margin: auto;
+  }
+  
+  
+  #markers option {
+    transform: rotate(-90deg);
+    padding: 0;
+  }
+  
+}
