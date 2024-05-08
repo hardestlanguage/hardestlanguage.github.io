@@ -50,11 +50,11 @@ button:hover {
 .fade-in {
   opacity: 0;
   animation: fade-in-animation 1s ease forwards;
-  position: absolute; /* 将动画容器设为绝对定位 */
-  top: 53%; /* 上方位置调整 */
-  left: 40%; /* 左侧位置调整 */
-  transform: translate(-50%, -50%); /* 使用 transform 属性水平垂直居中 */
-  z-index: 2; /* 确保动画位于图像之上 */
+  position: absolute; 
+  top: 53%; 
+  left: 40%; 
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
   color: orangered;
   font-size: 2rem;
   text-shadow: 4px 4px 8px white;
@@ -78,7 +78,7 @@ button:hover {
 }
 
 .container {
-  position: relative; /* 将容器设为相对定位 */
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,9 +100,9 @@ img {
   .fade-in {
     text-align: center;
     font-size: 6rem;
-    position: absolute; /* 将动画容器设为绝对定位 */
-    top: 40%; /* 上方位置调整 */
-    left: 40%; /* 左侧位置调整 */
+    position: absolute; 
+    top: 40%; 
+    left: 40%; 
   }
 
   img {

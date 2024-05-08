@@ -3,25 +3,12 @@ const output = document.getElementById('output');
 const languageText = document.getElementById('language-text');
 const advance = document.getElementById('hours-to-advanced');
 
-// 创建一个用于显示值的标签
-// const valueLabel = document.createElement('div');
-// valueLabel.classList.add('value-label');
-// document.querySelector('.hoursrange').appendChild(valueLabel);
-
-// 更新滑块值和值标签的位置
 function updateValueLabel() {
   const sliderWidth = slider.offsetWidth;
   const sliderValue = parseInt(slider.value);
-  // const labelWidth = valueLabel.offsetWidth;
-  
-  // const leftPosition = (sliderWidth * (sliderValue - slider.min)) / (slider.max - slider.min) - (labelWidth / 2);
-  // valueLabel.textContent = sliderValue;
 
   advance.textContent = `Hours to Advance: ${ sliderValue }`;
   
-  // valueLabel.style.left = leftPosition + 'px';
-
-  // 根据滑块值更新语言文本
   if (sliderValue >= 700 && sliderValue <= 1000) {
     languageText.innerHTML = 'French<br><br>Spanish';
   } else if (sliderValue >= 800 && sliderValue <= 1100) {
@@ -35,10 +22,8 @@ function updateValueLabel() {
   }
 }
 
-// 初始化
 updateValueLabel();
 
-// 监听滑块值改变事件
 slider.addEventListener('input', function() {
   updateValueLabel();
 });

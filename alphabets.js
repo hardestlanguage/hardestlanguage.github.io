@@ -334,7 +334,6 @@ window.addEventListener('load', () => {
     container.classList.add('number-container');
     document.body.appendChild(container);
 
-    // 水平分佈數字
     const totalWidth = window.innerWidth;
     const numberWidth = totalWidth / numbers.length;
     
@@ -346,5 +345,5 @@ window.addEventListener('load', () => {
       
       container.appendChild(numberElement);
     });
-  }, 4000); // 
+  }, 4000); 
 });

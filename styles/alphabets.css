@@ -28,8 +28,8 @@ h2{
 
 
 a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Use the default text color */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 figure {
@@ -43,7 +43,7 @@ figure {
   list-style: none;
   margin: 0 5%;
   padding: 0;
-  /* overflow: hidden; */
+  
 }
 .tag {
   list-style: none;
@@ -68,19 +68,18 @@ figure {
   text-decoration: underline;
   text-decoration-style:dashed;
   text-decoration-color: orangered;
-  /* padding: 0px 10px; */
   text-align: center; 
 }
 
 .tag-text::after {
   content: "";
   position: absolute;
-  bottom: -2px; /* 调整波浪线距离文本的距离 */
+  bottom: -2px; 
   left: 0;
   width: 100%;
-  height: 2px; /* 波浪线的高度 */
-  background-image: linear-gradient(90deg, transparent, orangered, transparent); /* 波浪线颜色 */
-  background-size: 50% 100%; /* 波浪线的宽度和高度比例 */
+  height: 2px; 
+  background-image: linear-gradient(90deg, transparent, orangered, transparent); 
+  background-size: 50% 100%; 
 }
 
 .number-container {
@@ -98,22 +97,23 @@ figure {
   width: 48px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #626567; /* Change number color to a darker shade */
-  text-shadow: 3px 3px 6px rgba(248, 247, 247, 0.907); /* Add a shadow effect */
+  color: #626567; 
+  text-shadow: 3px 3px 6px rgba(248, 247, 247, 0.907); 
 }
 .number-container .number:first-child {
   transform: translateX(-50%); 
 }
 
-/* 定义淡入动画 */
+/* starting fade in animation */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* 初始透明度为 0 */
+    opacity: 0; 
   }
   to {
-    opacity: 1; /* 最终透明度为 1 */
+    opacity: 1; 
   }
 }
+/* ending fade in animation */
 
 @media screen and (min-width: 900px) {
   h1{
